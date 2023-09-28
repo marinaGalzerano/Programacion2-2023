@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="15.0.0">
+  <zoom_level>7</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>84</x>
+      <y>161</y>
+      <w>161</w>
+      <h>133</h>
+    </coordinates>
+    <panel_attributes>ComprobanteDeVenta
+-
+-idNumero:int
+-cantItems:int
+-importeTotal:double
+-
++calcularTotal(double):double
+-setTipo(TipoDeComprobante):void</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>371</x>
+      <y>161</y>
+      <w>147</w>
+      <h>133</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;enum&gt;&gt;
+TipoDeComprobante
+-
+_+F_
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>238</x>
+      <y>189</y>
+      <w>147</w>
+      <h>35</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+m1=1
+-tipoDeComprobante
+</panel_attributes>
+    <additional_attributes>190.0;20.0;10.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>84</x>
+      <y>343</y>
+      <w>161</w>
+      <h>112</h>
+    </coordinates>
+    <panel_attributes>Cliente
+-
+-nombre:String
+-apellido:String
+-email:String
+-telefono:String
+-dni:String
+-
++getDatos():String</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>371</x>
+      <y>343</y>
+      <w>147</w>
+      <h>133</h>
+    </coordinates>
+    <panel_attributes>ItemFactura
+-
+-cantidad:int
+-
+-calcularImporteFinal(int):double
++calcularImporte():double
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>238</x>
+      <y>252</y>
+      <w>210</w>
+      <h>168</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+-List&lt;ItemFactura&gt;items</panel_attributes>
+    <additional_attributes>190.0;220.0;130.0;220.0;130.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>371</x>
+      <y>546</y>
+      <w>147</w>
+      <h>133</h>
+    </coordinates>
+    <panel_attributes>Producto
+-
+-importe:double
+-
++getImporte():double
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>434</x>
+      <y>469</y>
+      <w>63</w>
+      <h>91</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+m1=1
+-producto</panel_attributes>
+    <additional_attributes>10.0;110.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>84</x>
+      <y>14</y>
+      <w>161</w>
+      <h>84</h>
+    </coordinates>
+    <panel_attributes>Fecha
+-
+-dia:int
+-mes:int
+-anio:int
+-
++fecha():void
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>154</x>
+      <y>91</y>
+      <w>49</w>
+      <h>84</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+m1=1
+-fecha
+</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;100.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>154</x>
+      <y>287</y>
+      <w>49</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+m1=1
+-cliente
+</panel_attributes>
+    <additional_attributes>10.0;80.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLNote</id>
+    <coordinates>
+      <x>315</x>
+      <y>56</y>
+      <w>140</w>
+      <h>49</h>
+    </coordinates>
+    <panel_attributes>DIAGRAMA DE CLASE
+EJERCICIO 1</panel_attributes>
+    <additional_attributes/>
+  </element>
+</diagram>
