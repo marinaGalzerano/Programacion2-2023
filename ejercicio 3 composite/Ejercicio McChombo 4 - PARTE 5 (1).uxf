@@ -1,0 +1,55 @@
+<diagram program="umletino" version="15.1"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>920</x><y>260</y><w>210</w><h>120</h></coordinates><panel_attributes>Producto
+--
+- nombre: String
+- precio: double
+--
++ getNombre(): String
++ obtenerPrecio(): double</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>620</x><y>260</y><w>220</w><h>130</h></coordinates><panel_attributes>McChombo
+--
+- porcentajeDescuento: int
+- nombre: String
+- numero: int
+--
+- calcularDescuento(double): double
++ getNombre(): String
++ obtenerPrecio(): double</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>830</x><y>310</y><w>110</w><h>40</h></coordinates><panel_attributes>productos[]
+lt=&lt;-</panel_attributes><additional_attributes>90;20;10;20</additional_attributes></element><element><id>UMLClass</id><coordinates><x>670</x><y>0</y><w>210</w><h>190</h></coordinates><panel_attributes>/Facturable/
+--
+/+ obtenerPrecio(): double/</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>790</x><y>180</y><w>30</w><h>100</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>10;10;10;80</additional_attributes></element><element><id>Relation</id><coordinates><x>850</x><y>180</y><w>190</w><h>100</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>10;10;170;80</additional_attributes></element><element><id>UMLClass</id><coordinates><x>150</x><y>10</y><w>130</w><h>110</h></coordinates><panel_attributes>Ticket
+--
++ imprimir(): void</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>270</x><y>30</y><w>160</w><h>40</h></coordinates><panel_attributes>- items&lt;ArrayList&gt;
+lt=&lt;-</panel_attributes><additional_attributes>140;20;10;20</additional_attributes></element><element><id>UMLClass</id><coordinates><x>410</x><y>10</y><w>150</w><h>110</h></coordinates><panel_attributes>ItemTicket
+--
+- cantidad: int
+--
++ imprimir(): void</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>550</x><y>30</y><w>140</w><h>40</h></coordinates><panel_attributes>- item
+lt=&lt;-</panel_attributes><additional_attributes>120;20;10;20</additional_attributes></element><element><id>Relation</id><coordinates><x>670</x><y>180</y><w>130</w><h>100</h></coordinates><panel_attributes>- items&lt;ArrayList&gt;
+lt=&lt;-</panel_attributes><additional_attributes>10;10;10;80</additional_attributes></element><element><id>UMLClass</id><coordinates><x>320</x><y>620</y><w>240</w><h>110</h></coordinates><panel_attributes>AlgoritmoA
+--
+_- PORCENTAJE_DESCUENTO: int = 10_
++ calcularPrecio(double): double</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>620</x><y>620</y><w>220</w><h>110</h></coordinates><panel_attributes>AlgoritmoB
+--
+- valorFijo: double
+--
++ calcularPrecio(double): double
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>870</x><y>620</y><w>270</w><h>110</h></coordinates><panel_attributes>AlgoritmoC
+--
+_- PORCENTAJE_DESCUENTO: int = 30_
+_- PORCENTAJE_INCREMENTO: int = 20_
+--
++ calcularPrecio(double): double</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>620</x><y>440</y><w>220</w><h>110</h></coordinates><panel_attributes>/AlgoritmoCalculo/
+--
+/+ calcularPrecio(double): double/</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>440</x><y>540</y><w>220</w><h>100</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>200;10;10;80</additional_attributes></element><element><id>Relation</id><coordinates><x>720</x><y>540</y><w>30</w><h>100</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>10;10;10;80</additional_attributes></element><element><id>Relation</id><coordinates><x>820</x><y>540</y><w>210</w><h>100</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>10;10;190;80</additional_attributes></element><element><id>Relation</id><coordinates><x>720</x><y>380</y><w>90</w><h>80</h></coordinates><panel_attributes>- algoritmo
+lt=&lt;-</panel_attributes><additional_attributes>10;60;10;10</additional_attributes></element><element><id>UMLNote</id><coordinates><x>460</x><y>800</y><w>550</w><h>70</h></coordinates><panel_attributes>imprimir el ticket de la compra de un “McChombo 1” con el algoritmo de precio C un Domingo.
+bg=green</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>90</x><y>910</y><w>100</w><h>30</h></coordinates><panel_attributes>_T: Ticket_</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>290</x><y>910</y><w>100</w><h>30</h></coordinates><panel_attributes>_I: Item Ticket_</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>130</x><y>930</y><w>30</w><h>720</h></coordinates><panel_attributes>lt=.</panel_attributes><additional_attributes>10;10;10;700</additional_attributes></element><element><id>Relation</id><coordinates><x>330</x><y>930</y><w>30</w><h>710</h></coordinates><panel_attributes>lt=.</panel_attributes><additional_attributes>10;10;10;690</additional_attributes></element><element><id>Relation</id><coordinates><x>0</x><y>950</y><w>150</w><h>40</h></coordinates><panel_attributes>1. imprimir()
+lt=&lt;-</panel_attributes><additional_attributes>130;20;10;20</additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>130</x><y>960</y><w>20</w><h>600</h></coordinates><panel_attributes></panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>140</x><y>960</y><w>210</w><h>40</h></coordinates><panel_attributes>2. imprimir()
+lt=&lt;-</panel_attributes><additional_attributes>190;20;10;20</additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>330</x><y>980</y><w>20</w><h>510</h></coordinates><panel_attributes></panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>480</x><y>910</y><w>100</w><h>30</h></coordinates><panel_attributes>_M: McChombo_</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>520</x><y>930</y><w>30</w><h>710</h></coordinates><panel_attributes>lt=.</panel_attributes><additional_attributes>10;10;10;690</additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>520</x><y>1010</y><w>20</w><h>390</h></coordinates><panel_attributes></panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>340</x><y>990</y><w>200</w><h>40</h></coordinates><panel_attributes>3. obtenerPrecio()
+lt=&lt;-</panel_attributes><additional_attributes>180;20;10;20</additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>730</x><y>910</y><w>100</w><h>30</h></coordinates><panel_attributes>_M: Producto_</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLFrame</id><coordinates><x>400</x><y>1040</y><w>470</w><h>180</h></coordinates><panel_attributes>Loop
+Por cada producto</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>770</x><y>930</y><w>30</w><h>700</h></coordinates><panel_attributes>lt=.</panel_attributes><additional_attributes>10;10;10;680</additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>770</x><y>1070</y><w>20</w><h>60</h></coordinates><panel_attributes></panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>530</x><y>1050</y><w>260</w><h>40</h></coordinates><panel_attributes>4. obtenerPrecio()
+lt=&lt;-</panel_attributes><additional_attributes>240;20;10;20</additional_attributes></element><element><id>Relation</id><coordinates><x>530</x><y>1100</y><w>260</w><h>40</h></coordinates><panel_attributes>precio producto
+lt=&lt;.</panel_attributes><additional_attributes>10;20;240;20</additional_attributes></element><element><id>Relation</id><coordinates><x>530</x><y>1140</y><w>270</w><h>70</h></coordinates><panel_attributes>acumuladorChombo += precio producto
+lt=&lt;-</panel_attributes><additional_attributes>10;50;30;50;30;10;10;10</additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>980</x><y>910</y><w>100</w><h>30</h></coordinates><panel_attributes>_:AlgoritmoC_</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>1020</x><y>930</y><w>30</w><h>700</h></coordinates><panel_attributes>lt=.</panel_attributes><additional_attributes>10;10;10;680</additional_attributes></element><element><id>Relation</id><coordinates><x>530</x><y>1240</y><w>510</w><h>50</h></coordinates><panel_attributes>5. calcularPrecio(acumuladorChombo)
+lt=&lt;-</panel_attributes><additional_attributes>490;22;10;20</additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>1020</x><y>1260</y><w>20</w><h>70</h></coordinates><panel_attributes></panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>530</x><y>1310</y><w>510</w><h>40</h></coordinates><panel_attributes>precio final chombo
+lt=&lt;.</panel_attributes><additional_attributes>10;20;490;20</additional_attributes></element><element><id>Relation</id><coordinates><x>340</x><y>1380</y><w>200</w><h>40</h></coordinates><panel_attributes>precio final chombo
+lt=&lt;.</panel_attributes><additional_attributes>10;20;180;20</additional_attributes></element><element><id>Relation</id><coordinates><x>140</x><y>1470</y><w>210</w><h>40</h></coordinates><panel_attributes>precio final chombo
+lt=&lt;.</panel_attributes><additional_attributes>10;20;190;20</additional_attributes></element></diagram>
